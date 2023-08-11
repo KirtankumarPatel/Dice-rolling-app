@@ -2,6 +2,8 @@ package com.kirtanpatel.dicerolling;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+// we import some button, group and text view
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +12,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+// create public class and in activity function we called radio button and put integer value then we called override function which is protected function..
 public class MainActivity extends AppCompatActivity {
 
     RadioGroup radioGroup;
@@ -27,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+    // create radio group button 2,4,6,8,10,12.. and put if else condition
 
         radioGroup=findViewById(R.id.radioGroup);
         radioButton4=findViewById(R.id.side4);
@@ -63,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("DefaultLocale")
             @Override
+
+            // called public class function and put if else conditions and called max value..
             public void onClick(View v) {
                 int selectedId=radioGroup.getCheckedRadioButtonId();
 
